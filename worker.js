@@ -17,7 +17,7 @@ export default {
       const payload = decodeURIComponent(m[1]);
 
       // Forward notification (example: ntfy topic, replace YOUR_TOPIC)
-      await fetch("https://ntfy.sh/YOUR_TOPIC", {
+      await fetch("https://ntfy.sh/signal-test123", {
         method: "POST",
         body: `signal: ${payload} @ ${new Date().toISOString()}`
       });
